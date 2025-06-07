@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#c64c20 ;
+}
+.backButton{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    padding-top: 20px;
+}
+.backButton a{
+    text-decoration: none;
+    position: absolute;
+    left: 110px;
+    background-color: #c64c20;
+    padding: 10px 40px;
+    color: white;
+    transition: .5s;
+    border-radius: 20px;
+    font-weight: 800;
+
+}
+.backButton a:hover{
+    border:1px solid #c64c20;
+    background-color: white;
+    color: #c64c20;
+}
+.branchInfo{
+    margin-top: 20px;
+    background-color: #eee;
+}
+div.delete-user .fa-circle-xmark{
+    font-size: 2.8rem;
+    color: red;
+}
+div.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn-readMore , .btn-edit , .btn-delete {
+    color: white;
+    transition: ease-in-out .3s;
+    
+}
+
+.btn-readMore {
+    background-color: #d78162;
+}
+.btn-readMore:hover {
+    background-color: #d78162;
+    color: white;
+}
+.btn-edit {
+    background-color: #cb5d36
+    ;
+}
+.btn-edit:hover {
+    background-color: #cb5d36
+    ;
+    color: white;
+}
+.btn-delete  {
+    background-color: #c64c20;
+}
+.btn-delete:hover {
+    background-color: #c64c20;
+    color: white;
+}

@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headingContainer{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+.headingContainer::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color:#c64c20 ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.heading h2{
+    color: #c64c20;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.formContainer{
+    margin-top: 30px;
+}
+.formContainer form{
+    position: relative;
+}
+.formContainer form .inputs{
+    width: 100%;
+    /* background-color: #eee; */
+    box-shadow: 1px 1px 10px gray, -1px -1px 10px gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.formContainer form .inputs .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+.formContainer form .inputs label{
+    color: #c64c20;
+    font-weight: 800;
+}
+.formContainer form .inputs input{
+    border:1px solid #c64c20;
+    border-radius: 20px;
+    padding: 3px;
+}
+.col-1{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.fa-circle-plus,.fa-circle-minus{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-circle-minus
+{
+    color: red;
+}
+.fa-circle-plus{
+    color: green;
+}
+.fa-circle-minus:hover
+{
+    color: rgb(187, 7, 7);
+}
+.fa-circle-plus:hover{
+    color: rgb(3, 87, 3);
+}
+.submit-container{
+    position: absolute;
+    right: 100px;
+}
+.backButton{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* width: 100%; */
+    height: 50px;
+    display: inline;
+    object-fit: cover;
+    /* background-color: white; */
+    text-decoration: none;
+    left: 110px;
+    background-color: #c64c20;
+    padding: 10px 40px;
+    color: white;
+    transition: .5s;
+    border-radius: 20px;
+    font-weight: 800;
+
+}
+
+.backButton:hover{
+    border:1px solid #c64c20;
+    background-color: white;
+    color: #c64c20;
+}

@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.goods_container{
+    position: relative;
+    height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_goods-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    border-radius: 30px;
+
+}
+.goods_container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+    border-radius: 30px;
+
+}
+.goods_container form{
+    padding: 20px;
+    color: white;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.goods_container form legend{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.goods_container form .filed{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+.goods_container form .filed label{
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.goods_container form .filed input{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    color: #c64c20;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 300px;
+}
+.goods_container form  .btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 20px;
+}
+.goods_container form  .btns button ,
+.goods_container form  .btns a{
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: white;
+    background-color: #c64c20;
+    letter-spacing: 2px;
+    font-weight: 800;
+    padding: 10px 40px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.goods_container form  .btns button:hover,
+.goods_container form  .btns a:hover{
+    background-color: white;
+    color: #c64c20;
+}
+
+.success_message{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    animation-name: displayANDhide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.fa-circle-check{
+    color: green;
+}
+
+.hidden{
+    display: none;
+}
+@keyframes displayANDhide{
+    0%{
+        visibility: visible;
+    }
+    30%{
+        visibility: visible;
+
+    }
+    70%{
+        visibility: visible;
+
+    }
+    100%{
+        visibility: visible;
+    }
+   
+}

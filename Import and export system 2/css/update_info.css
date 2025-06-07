@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 9px gray , -1px -1px 9px gray;
+    padding: 30px;
+    border-radius: 20px;
+    animation-name: formAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes formAnimation{
+    0%{
+        box-shadow: 10px 1px 20px gray;
+    }
+    25%{
+        box-shadow: 1px 10px 20px gray;
+    }
+    50%{
+        box-shadow: -10px 1px 20px gray;
+    }
+    75%{
+        box-shadow: 1px -10px 20px gray;
+    }
+    100%{
+        box-shadow: 10px 1px 20px gray;
+    }
+
+    
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form h2{
+    color: #1a3a4a;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.signupHead{
+    color: #c64c20;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 380px;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    padding: 0 .4rem;
+    overflow: hidden;
+}
+@media (max-width:992px){
+    .input-field{
+        width: 220px;
+    }
+}
+.input-field i {
+    color: #acacac;
+    text-align: center;
+    /* line-height: 55px; */
+    font-size: 1.1rem;
+}
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    overflow: hidden;
+    color: #1a3a4a;
+}
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    background-color:#1a3a4a;
+    margin: 10px 0;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #c64c20;
+    color: white;
+}
+.SignUpbtn{
+    background-color: #c64c20;
+}
+.SignUpbtn:hover{
+    background-color: #1a3a4a;
+}
+.back a{
+    text-decoration: none;
+}
+.back p{
+    margin-top: 20px;
+    color: #c64c20;
+}
+
+.loading{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    animation-name: displayANDhide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+/* .hidden {
+    display: none;
+} */
+.success_message{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    animation-name: displayANDhide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+}
+.hidden{
+    display: none;
+}
+.fa-circle-check{
+    color: green;
+}
+
+@keyframes displayANDhide{
+    0%{
+        visibility: visible;
+    }
+   
+    /* 100%{
+        visibility: hidden;
+    } */
+   
+}
+.error{
+    color: red;
+}
